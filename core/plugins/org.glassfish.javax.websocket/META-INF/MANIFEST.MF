@@ -1,0 +1,16 @@
+Manifest-Version: 1.0
+Built-By: pavel
+Build-Jdk: 1.7.0_67
+Created-By: Apache Maven 3.2.3
+Archiver-Version: Plexus Archiver
+Bundle-Description: Default provider for JSR 356:Java API for WebSocket
+Bundle-DocURL: http://www.oracle.com
+Bundle-License: https://glassfish.java.net/public/CDDL+GPL_1_1.html
+Bundle-ManifestVersion: 2
+Bundle-Name: JSR 356 (WebSocket) Default Provider
+Bundle-SymbolicName: org.glassfish.javax.websocket
+Bundle-Vendor: Oracle
+Bundle-Version: 1.8.3
+Export-Package: javax.websocket,
+ javax.websocket.server
+Bundle-RequiredExecutionEnvironment: JavaSE-1.7
