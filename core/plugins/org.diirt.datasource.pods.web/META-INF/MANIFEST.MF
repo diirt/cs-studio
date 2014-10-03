@@ -1,0 +1,17 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Loc DataSource
+Bundle-SymbolicName: org.diirt.datasource.pods.web;singleton:=true
+Bundle-Version: 0.1.0.qualifier
+Bundle-Description: Provides web-pods DataSource to pvmanager
+Require-Bundle: org.eclipse.core.runtime,
+ org.csstudio.utility.pvmanager;bundle-version="2.0.0",
+ org.csstudio.utility.pvmanager.vtype;bundle-version="2.0.0",
+ org.epics.util;bundle-version="0.2.0",
+ org.epics.vtype;bundle-version="2.0.0",
+ org.diirt.web.pods.common,
+ org.glassfish.javax.websocket
+Bundle-ActivationPolicy: lazy
+Bundle-RequiredExecutionEnvironment: JavaSE-1.7
+Bundle-Vendor: Gabriele Carcassi <carcassi@bnl.gov>, Kunal Shroff <kshroff@bnl.gov> - BNL
+Export-Package: org.diirt.datasource.pods.web
