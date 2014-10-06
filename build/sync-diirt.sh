@@ -128,7 +128,7 @@ echo pods repo
 git clone git@github.com:diirt/pods.git $HGDIR
 
 echo Synching web-pods-common
-sync_dir vtype $HGDIR/web-pods-common/src/main/java/org/diirt ../core/plugins/org.diirt.web.pods.common/src/org/diirt/
+sync_dir web $HGDIR/web-pods-common/src/main/java/org/diirt ../core/plugins/org.diirt.web.pods.common/src/org/diirt/
 git commit --author="Gabriele Carcassi <gabriele.carcassi@gmail.com>" -m "org.diirt.pods.web.common: update to current SNAPSHOT" ../core/plugins/org.diirt.web.pods.common
 echo Done web-pods-common
 
