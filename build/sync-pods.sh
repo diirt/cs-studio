@@ -23,9 +23,9 @@ git commit --author="Gabriele Carcassi <gabriele.carcassi@gmail.com>" -m "org.di
 echo Done web-pods-common
 
 echo Synching web-pods-datasource
-sync_dir datasource $HGDIR/web-pods-common/src/main/java/org/diirt ../core/plugins/org.diirt.datasource.pods.web/src/org/diirt/
+sync_dir datasource $HGDIR/web-pods-datasource/src/main/java/org/diirt ../core/plugins/org.diirt.datasource.pods.web/src/org/diirt/
 git commit --author="Gabriele Carcassi <gabriele.carcassi@gmail.com>" -m "org.diirt.datasource.pods.web: update to current SNAPSHOT" ../core/plugins/org.diirt.datasource.pods.web
 echo Done web-pods-datasource
 
-#rm -rf $HGDIR
+rm -rf $HGDIR
 
