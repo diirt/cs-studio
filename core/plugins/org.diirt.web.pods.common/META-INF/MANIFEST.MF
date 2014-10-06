@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: JSON support for vType
+Bundle-SymbolicName: org.diirt.web.pods.common;singleton:=true
+Bundle-Version: 0.1.0.qualifier
+Bundle-Vendor: Gabriele Carcassi <carcassi@bnl.gov>, Kunal Shroff <kshroff@bnl.gov> - BNL
+Bundle-RequiredExecutionEnvironment: JavaSE-1.7
+Require-Bundle: org.glassfish.javax.json;visibility:=reexport,
+ org.glassfish.javax.websocket,
+ org.epics.vtype.json
+Export-Package: org.diirt.web.pods.common

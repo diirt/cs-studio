@@ -2,8 +2,6 @@
  * Copyright (C) 2010-14 pvmanager developers. See COPYRIGHT.TXT
  * All rights reserved. Use is subject to license terms. See LICENSE.TXT
  */
-
-
 package org.epics.vtype.json;
 
 import java.util.ArrayList;
@@ -31,6 +29,7 @@ import org.epics.vtype.Display;
 import org.epics.vtype.Time;
 import org.epics.vtype.ValueFactory;
 import static org.epics.vtype.json.JsonArrays.*;
+
 /**
  *
  * @author carcassi
@@ -153,6 +152,8 @@ class VTypeJsonMapper implements JsonObject {
                 types.add(short.class);
             } else if ("byte".equals(type)) {
                 types.add(byte.class);
+            } else if ("Timestamp".equals(type)) {
+                types.add(Timestamp.class);
             } else {
                 throw new IllegalArgumentException("Column type " + type + " not supported");
             }
@@ -179,6 +180,8 @@ class VTypeJsonMapper implements JsonObject {
                 result.add(toListShort(array.getJsonArray(i)));
             } else if (byte.class.equals(type)) {
                 result.add(toListByte(array.getJsonArray(i)));
+            } else if (Timestamp.class.equals(type)) {
+                result.add(toListTimestamp(array.getJsonArray(i)));
             } else {
                 throw new IllegalArgumentException("Column type " + type + " not supported");
             }
