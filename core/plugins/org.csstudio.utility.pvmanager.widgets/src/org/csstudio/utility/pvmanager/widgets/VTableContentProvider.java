@@ -28,8 +28,16 @@ public class VTableContentProvider implements IStructuredContentProvider {
 		}
 		
 		public Object getValue(int column) {
-			if (vTable.getColumnType(column).equals(Integer.TYPE)) {
+			if (vTable.getColumnType(column).equals(Byte.TYPE)) {
+				return ((ListNumber) vTable.getColumnData(column)).getByte(row);
+			} else if (vTable.getColumnType(column).equals(Short.TYPE)) {
+				return ((ListNumber) vTable.getColumnData(column)).getShort(row);
+			} else if (vTable.getColumnType(column).equals(Integer.TYPE)) {
 				return ((ListNumber) vTable.getColumnData(column)).getInt(row);
+			} else if (vTable.getColumnType(column).equals(Long.TYPE)) {
+				return ((ListNumber) vTable.getColumnData(column)).getLong(row);
+			} else if (vTable.getColumnType(column).equals(Float.TYPE)) {
+				return ((ListNumber) vTable.getColumnData(column)).getFloat(row);
 			} else if (vTable.getColumnType(column).equals(Double.TYPE)) {
 				return ((ListNumber) vTable.getColumnData(column)).getDouble(row);
 			} else if (vTable.getColumnType(column).equals(String.class)) {
