@@ -8,4 +8,4 @@ Bundle-RequiredExecutionEnvironment: JavaSE-1.7
 Require-Bundle: org.glassfish.javax.json;visibility:=reexport,
  org.glassfish.javax.websocket,
  org.epics.vtype.json
-Export-Package: org.diirt.web.pods.common
+Export-Package: org.diirt.pods.web.common
