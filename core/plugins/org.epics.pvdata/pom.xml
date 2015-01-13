@@ -9,6 +9,6 @@
   </parent>
   <groupId>org.csstudio</groupId>
   <artifactId>org.epics.pvdata</artifactId>
-  <version>3.1.1-SNAPSHOT</version>
+  <version>4.0.2</version>
   <packaging>eclipse-plugin</packaging>
 </project>
